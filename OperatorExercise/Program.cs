@@ -11,9 +11,17 @@ namespace OperatorExercise
             int quotient = a / b;
             int remainder = 1 % b;
 
-            if (a==17 && b == 4)
+            int additionAnswer = a + b;
+            int subtractionAnswer = a - b;
+            int multiplicationAnswer = a * b;
+
+            Console.WriteLine($"The addition result is {additionAnswer}");
+            Console.WriteLine($"The subtraction result is {subtractionAnswer}");
+            Console.WriteLine($"The multiplication result is {multiplicationAnswer}");
+            Console.WriteLine($"The division result is shown below:");
+            if (a==17 && b == 4) //division result
             {
-                Console.WriteLine($"{a}/{b} is remainder {remainder}");
+                Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
             }
         }
     }
