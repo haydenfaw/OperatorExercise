@@ -4,6 +4,11 @@ namespace OperatorExercise
 {
     internal class Program
     {
+        public static double AreaOfCircle(double radius)
+        {
+            double areaOfCircle = (Math.PI * radius * radius);
+            return areaOfCircle;
+        }
         static void Main(string[] args)
         {
             int a = 17;
@@ -23,6 +28,13 @@ namespace OperatorExercise
             {
                 Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
             }
+
+            //Adding AreaOfCircle()
+            Console.WriteLine($"What is the radius of your circle?");
+            var radius = double.Parse(Console.ReadLine());
+            double areaOfCircle = AreaOfCircle(radius);
+
+            Console.WriteLine($"The area of a circle with radius of {radius} is {areaOfCircle}");
         }
     }
 }
